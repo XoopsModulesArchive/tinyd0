@@ -1,0 +1,5 @@
+<{$content}>
+<{if $is_summary}>
+  <br />
+  <a href="<{$mymoddir}>/index.php?id=<{$storyid}>"><{$lang_more}></a>
+<{/if}>

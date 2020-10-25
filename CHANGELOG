@@ -1,0 +1,384 @@
+[xlang:en]
+CHANGELOG:
+
+
+- added portuguesebr language files (thx Izzy)
+
+2005-11-14 2.19
+- modified the compatibilities with PHP 5.0.5
+- remove CRs in some php files
+
+2005-8-27 2.18
+- modified a compatibility with XOOPS 2.1/2.2
+- updated myblocksadmin into 0.40
+- modified Render/Xhtml/Code.php in PEAR Text_Wiki
+
+2005-5-31 2.17
+- modified common's SPAW can use with Windows server
+- updated gtickets.php
+- fixed preview breaks editing mode
+- modified {X_SITEURL} in all of contents will be converted to XOOPS_URL
+- fixed WRAP2&3's URI to top in page navigation
+- modified common SPAW with myAlbum-P as attachment manager (2.17a)
+
+2005-5-11 2.16
+- added singlecontent.php for popup etc.
+- added common html header into preferences
+- fixed a bug in page navigation (thx kumakichi)
+- updated common's SPAW into nobunobu version based on 1.0.7 (special thx nobunobu!)
+- modified you can edit with WYSIWYG editor via Firefox
+
+2005-5-02 2.15
+- fixed XSS in common's SPAW (thx nobunobu!)
+
+2005-4-20 2.14
+- added submenu unit mode into page navigation
+
+2005-4-19 2.13
+- fixed heading in SPAW
+- added assigning 'xoops_default_comment_title' for "Comment Anywhere"
+
+2005-4-17 2.12
+- modified "modules/less" mode can use xoops comments
+- modified WRAP2 can use xoops comments
+
+2005-4-16 2.11
+- fixed "export" doesn't check if admin of the target module.
+- added the rule page of PEAR::Text_Wiki
+- updated PEAR::Text_Wiki into 1.0 stable
+
+2005-4-13 2.10
+- added a field for HTML headers (check $xoops_module_header in your theme.html)
+- added a field for created date
+- added "export" to other TinyDs
+- added "saveas/clone" in content's editor
+- fixed a typo in the interface to search module by suin
+- fixed a bug with treating homepage
+
+2005-3-4 2.07
+- added INDEXes into sql/tinycontent*.sql
+- modified the onupdate feature adding field of last_modified automatically
+- modified saving last_modified in batch update
+- added some samples -last modified or edit link- into tinycontent_index.html
+- updated myblocksadmin 0.27 & mymenu 0.12
+- modified english language files (thx Peter)
+
+2005-2-22 2.06
+- fixed notice with some httpd (thx karedokx)
+- updated myblocksadmin 0.26 & mymenu 0.11
+
+2005-2-19 2.05
+- added a mode collaborate with "tell a friend" by GIJOE
+- added a mode of "modules/less" experimentaly
+- fixed some bad links in blocks admin (thx karedokx)
+- modified search.inc.php can display bodies with "search module" by suin
+
+2005-2-11 2.04
+- fixed a bug comments is not usable with homepage (thx hodaka)
+- added a mode without BB code into HTML and Text
+
+2005-2-6 2.03
+- modified preview works with firefox etc.
+- added an assignment homepage_id
+- updated myblocksadmin 0.25 & mymenu 0.10
+
+2005-1-8 2.02
+- updated myblocksadmin 0.23
+
+2004-12-30 2.01
+- added link to full view in content block with [summary][/summary]
+- fixed a bug with specifying homepage (thx HODAKA)
+- added blank directory rewrite/ for mod_rewrite (thx uishii)
+- updated myblocksadmin 0.22 & mymenu 0.07
+
+2004-12-7  2.00
+- added ticket system for the security
+- modified the values of block's options will be kept when module is updated (thx nobunobu)
+- modified as DUPLICATABLE V2.1
+- modified PEAR & spaw separated
+- modified spaw can insert images from myAlbum-P's ImageManager Integration (thx nobunobu)
+- many bugs fixed
+- some security holes are fixed (special thx JM2!)
+
+2004-7-7  1.5mh014
+- fixed a bug about sanitize when magic_quotes_gpc is On (thx Ryuji)
+
+2004-6-25  1.5mh013
+- fixed a bug of redeclair rendering functions (thx Christoph)
+- applied some php environment is not defined 'PATH_SEPARATOR' (thx toshimitsu)
+- added sunday_Text_Wiki (commented out in default) (thx minahito!)
+
+2004-6-18  1.5mh012
+- added content block (this block is duplicatable !)
+-- if you want to use template, rename tinycontent_content_block.html.dist to tinycontent_content_block.html and edit it.
+- added class TinyDTextSanitizer extends MyTextSanitizer
+- added tag [siteimg]
+- added tag [summary][/summary] only text inside this tag will be displayed in content block
+- added WRAP4 mode (replace attribute of 'src' or 'href')
+- added "double space to space + & nbsp;" mode
+- fixed typo in page navigation (thx HODAKA)
+- fixed encoding problem with search (thx almhouse)
+- added swedish language files (thx Leif Madsen)
+
+2004-6-2   1.5mh011
+- added a config can select block of tc_nav's target
+- added a config whether it displays "printer friendly" icon or not
+- added a config whether it displays "tell a friend" icon or not
+- added page navigation
+- updated mymenu
+
+2004-5-6   1.5mh010
+- fixed the trouble which occurs in languages other than English
+- added temporary language files of danish, french, german, nederlands, spanish, tchinese (Better language files are appriciated.)
+
+2004-4-27  1.5mh009
+- Fixed enable to select spaw when making new content (2nd careless mistake)
+- Modified changeable the editor for textarea in editing part
+
+2004-4-25  1.5mh008
+- fixed careless mistake in xoops_version.php (thx DonXoop)
+
+2004-4-23  1.5mh007
+- added mod_rewrite for each page wrapping
+- added mod_rewrite for module entirely (SEO?)
+- modified that relative link in wrapped html can be displayed in XOOPS automatically by using mod_rewrite (special thx to minahito!)
+- added encoding translation in dislaying wrapped html
+- added PEAR Wiki mode (special thx to minahito!)
+- added PHP mode
+- added preview
+- added selectable switch to use or not to use SPAW according to the usage
+- modified that the size of textarea can be changed
+- united checkboxes into "enable comments". (not to use "disable comments")
+- modified the action when "homepage" can't be displayed
+- added field for timestamp. (you should "alter table" in list view)
+
+2004-4-10  1.5mh006
+- Base of page wrapping can be changed into the directory same as the page.
+- Chanegd wrapped contents is searchable
+- Templatized printing script
+- Renamed .htaccess into .htaccess.dist for some environment.
+-- (If you want more secure, rename it back as .htaccess manually)
+- Changed even homepage is displayed in Submenu.
+- Modification with "tell to a friend" in muti-byte environment.
+- Changed to use SPAW instance in tinycontent/admin/spaw from every tinycontent*. (another tinycontent*/admin/spaw can be deleted.)
+- Debugged with SPAW (eg. wrong virtual paths in dialogs)
+- Changed as selectable SPAW's language from tinycontent's language files.
+- Improved a variety of code and changed minor specifications.
+
+2004-3-10  1.5mh005
+- submenu's priority added (thx Tom_G3X)
+- myblocksadmin updated into 0.05
+
+2004-2-29  1.5mh004
+- myblocksadmin updated
+- modified to work fine under register_globals off
+- .htaccess added
+
+2004-2-26  1.5mh003
+- Templates of each modules was separated. If you used customized template, rebuild template please. (spcial thx toshimitsu)
+- A security hole of SPAW has fixed.
+- Another some fixes
+
+2004-2-23  1.5mh002
+- Fixed typo in tc_navigation.php (thx toshimitsu)
+- use eval() instead of function definition multiply (special thx minahito!)
+
+2004-2-18  1.5mh001
+- The first release version
+
+
+
+[/xlang:en]
+[xlang:ja]
+
+変更履歴:
+
+2005-11-14 2.19
+- PHP 5.0.5 との相性問題改善
+- 改行コードがCR+LF となっていた部分をLFに統一
+
+2005-8-27 2.18
+- XOOPS 2.1/2.2 との互換性改善 （動作確認)
+- myblocksadmin を 0.40 に上げた
+- PEAR Text_Wiki の code 処理がおかしかったのを勝手に修正
+
+2005-5-31 2.17
+- WindowsサーバでSPAWが使えなかったのを修正
+- gtickets.php の更新
+- プレビューすると、SPAWやPLAINなどのモードが破壊されていたのを修正
+- XOOPS_URLに強制変換される {X_SITEURL} というタグの導入
+- WRAP2やWRAP3がhomepageである時のページナビゲーションを修正
+- common SPAWでmyAlbum-Pの画像以外のファイルにも対応 (2.17a)
+
+2005-5-11 2.16
+- ポップアップ用等に使えるコントローラsinglecontent.php追加 (WRAP2未対応)
+- 一般設定にコンテンツ・ページラップ共通のHTMLヘッダ項目追加
+- サブメニューだけのページナビゲーションにあったバグを修正 (thx kumakichi)
+- SPAWをのぶのぶさんの1.0.7ベースのものにアップデート (special thx nobunobu!)
+- Firefox でも WYSIWYGが使えるように修正
+
+2005-5-02 2.15
+- common内のSPAWに見つかったXSSの修正 (thx nobunobu!)
+
+2005-4-20 2.14
+- サブメニュー単位でページナビゲーションするモードの新設
+
+2005-4-19 2.13
+- SPAW の heading ドロップダウンが効いていないバグを修正
+- 「どこでもXOOPSコメント」用に、'xoops_default_comment_title' をアサインした
+
+2005-4-17 2.12
+- modulesレスモードでコメント機能が使えなかったのを改善（「どこコメ」0.03は×）
+- WRAP2モードでもコメント機能が使えるようにしてみた（「どこコメ」0.03は×）
+
+2005-4-16 2.11
+- モジュール間「移動」で、先方の管理者権限をチェックしていなかったのを修正
+- PEAR::Text_Wiki のルールページ追加
+- common内同梱の PEAR::Text_Wiki を 1.0 stable に上げた
+- Sunday_Wikiを一時的に消した (minahitoさん、ごめんなさい)
+
+2005-4-13 2.10
+- 個別HTMLヘッダ出力機能の追加 (要 テーマ内の <{$xoops_module_header}>)
+- 作成日時フィールドの追加
+- 他のTinyDへの「移動」（エクスポート）機能の追加
+- 編集画面における「別レコードとして保存」ボタンの新設
+- XOOPSサーチモジュールの新版対応でのtypoを修正
+- ホームページが外れてしまうバグを修正
+
+2005-3-4 2.07
+- tinycontent*.sqlでインデックスをいろいろつけるようにした
+- last_modified をモジュールアップデート時にチェックするようにした
+- last_modified が順番変更程度では変わらないように修正した
+- 最終更新日時や編集リンクのサンプルをテンプレートに追加した
+- updated myblocksadmin 0.27 & mymenu 0.12
+- 英語ファイルを修正 (thx Peter)
+
+2005-2-22 2.06
+- 一部のhttpdでNoticeが出ることに対応 (thx karedokx)
+- myblocksadmin 0.26 & mymenu 0.11 にアップデート
+
+2005-2-19 2.05
+- tell a friendモジュールに対応
+- modulesレスモードの試験的実装
+- blocks admin で画像リンクがおかしくなっていたのを修正 (thx karedokx)
+- searchモジュールで本文表示対応
+
+2005-2-11 2.04
+- ホームページだと、コメントが使えなかったのを修正 (thx hodaka)
+- テキストおよびHTMLコンテンツに、BB codeコンバート無し設定も追加
+
+2005-2-6 2.03
+- プレビューがブラウザ依存となっていたことを修正し、セッション渡しに改善
+- ホームページIDを、homepage_id としてアサイン
+- updated myblocksadmin 0.25 & mymenu 0.10
+
+2005-1-8 2.02
+- updated myblocksadmin 0.23
+
+2004-12-30 2.01
+- コンテントブロックで[summary][/summary]にて省略された時の「もっと...」追加
+- HP指定が簡単にはずれてしまうバグの修正 (thx HODAKA)
+- mod_rewriteモードのために、空の rewrite ディレクトリを用意 (thx uishii)
+- myblocksadmin 0.22 & mymenu 0.07 それぞれ更新
+
+2004-12-7  2.0
+- チケットシステムの全面導入
+- モジュールアップデート時のブロックオプション値保存 (thx nobunobu)
+- DUPLICATABLE V2.1 の導入
+- PEAR と spaw を XOOPS_ROOT_PATH/common/ へと分離
+- myAlbum-Pのイメージマネージャ統合がspawでも使えるようにした（あまり期待されても困りますが、あくまで暫定的な実装です） (thx nobunobu)
+- 数え切れない（＝思い出せない）ほどのバグFix
+- ファイル指定関連のセキュリティホールを潰した (special thx JM2!)
+
+2004-7-7  1.5mh014
+- magic_quotes_gpc On時のサニタイズ処理ミスを修正 (thx Ryuji)
+
+2004-6-25  1.5mh013
+- render_functions.phpが二重に読み込まれてしまうバグの修正 (thx Christoph)
+- PATH_SEPARATOR 未定義環境への対応 (thx toshimitsu)
+- sunday_Text_Wiki をこっそり入れた (コメントアウトしてあります) (thx minahito!)
+
+2004-6-18  1.5mh012
+- コンテンツ本体表示ブロックを追加した （このブロックは複製可能です！）
+-- 複製可能を実現するために、XOOPSテンプレートシステムは使えませんでした。テンプレートをご利用になりたい方は、templates/blocks/tinycontent_content_block.html.dist というファイルを、tinycontent_content_block.html とリネームして、これを編集してください。
+- MyTextSanitizer を拡張した TinyDTextSanitizerを使うようにした
+- [siteimg] タグの追加。
+--[url]に対する[siteurl]に相当するもので、途中でXOOPS_URLが書き変わるような用途に向いています。myAlbum-Pのイメージマネージャ統合での対応はもう少しお待ち下さい。
+- [summary][/summary] ブロックタグの追加
+-- [summary]ブロックがある場合、この内側だけが、コンテンツ本体ブロックに表示されます
+- ページラップモード4 の追加（HTMLタグの'src'および'href'属性を調べて、相対リンクとおぼしきものがあったらXOOPS_URLをベースとした絶対リンクに書き換える手法）
+- 連続したスペースを、入力した通りのままに表示するモードの追加（ただし、自動改行を有効としたアーティクルについてのみ）
+- ページナビゲーションでリンクがおかしいバグの修正 (thx HODAKA)
+- ページラップしたコンテンツが文字コードの問題で検索にひっかからないバグの修正 (thx sarah)
+- スエーデン語の追加 (thx Leif Madsen)
+
+2004-6-2   1.5mh011
+- ブロックでの表示対象を、全てかサブメニュー対象かのいずれかに絞れるようにした
+- プリント用アイコン・友達に紹介アイコンのいずれも、一般設定でON/OFF可能とした
+- 連続した内容を分割表示するための前後ページへのナビゲーションを追加した
+- mymenu を更新
+
+2004-5-6   1.5mh010
+- 一時的に、全言語ファイルを作成した
+-- (danish, french, german, nederlands, spanish, tchinese)
+
+2004-4-27  1.5mh009
+- 新規コンテンツ作成で直接SPAWを選択できなかったのを修正（これもポカミス）
+- 編集画面内で、テキストエリアのエディタを変更できるように修正
+
+2004-4-25  1.5mh008
+- xoops_version.php の記述ミスで、モジュール管理画面でエラーが出るのを修正 (thx DonXoop)
+
+2004-4-23  1.5mh007
+- ページラップのmod_rewriteモード実装 (個別指定）
+- モジュール全体のmod_rewriteモード実装 (SEO対策?)
+- 静的HTMLをアップするだけでも、mod_rewriteによってXOOPSにとりこまれるようにした  (special thx to minahito!)
+- ページラップのエンコーディング変換追加（そういえばすっかり忘れてました）
+- PEAR Wiki コンテンツモード実装 (special thx to minahito!)
+- PHPコードモード実装 ( eval()を使っているだけなので、注意事項はカスタムPHPブロックと同じです。<? ?> でくくらないとか、XOOPS変数にはglobal宣言が要るとか)
+- プレビュー実装
+- SPAWの使用を個別にON/OFFできるようにした
+- テキストエリアのサイズ指定をできるようにした
+- 一覧画面と編集画面で、コメントの可・不可が混同していたのを統一した
+- ホームページ指定がない場合、または指定されたページが表示不可の場合には、優先順位の一番高い表示可能ページへリダイレクトするようにした
+- 更新日時を記録するようにした（テーブル構造の変更を伴うので、一覧画面から更新していただいた方が良いですが、しなくても当面問題ありません。）
+
+2004-4-13  1.5mh006
+- ページラップの基点をcontentディレクトリに変更できるようにした
+- ページラップも検索にかかるようにした
+- プリント画面のテンプレート化
+- モジュールルートにある .htaccess を .htaccess.dist に変更した
+ （出来れば、セキュリティを高めるために、.htaccess に名前変更して下さい）
+- HP指定があっても、サブメニューの表示を可能とした
+- 「友達に紹介」をマルチバイト言語でも化けないようにしてみた
+ （mb関数を使わない、という条件下で、出来る限り化けないような工夫）
+- SPAWの実体を常に tinycontent/admin/spaw を使うようにした (他のtinycontent*については、spawをフォルダごと消しても構いません）
+- SPAWのバグ取り（ダイアログの画像リンク切れ修正等）
+- SPAWの言語を選択可能とした
+- SPAWに言語jpを追加 (thx to author of tinycontent-v1.5jp.patch)
+- その他様々なコード改良・細かな仕様変更
+
+2004-3-10  1.5mh005
+- サブメニューの表示順を反映した (thx Tom_G3X)
+- myblocksadmin を0.05に更新した
+
+2004-2-29  1.5mh004
+- myblocksadmin を0.04に更新した
+- register_globals On 依存だった部分を修正した（それもなるべく丁寧に）
+- .htaccess を最初から置くようにした
+
+2004-2-26  1.5mh003
+- テンプレートを個別に指定できるようにした (toshimitsuさん、適切なアドバイスありがとうございました）なお、テンプレート構造が大幅に変わったので、カスタムテンプレートを使っている方は作り直す必要があります。また、ブロックのテンプレートを再認識させるために、ブロック処理ファイル名を変更したため、違うブロックとして認識されてしまいます。再度、ブロックのアクセス権限や表示有無を設定してください。お手数をおかけしてすみません。
+- SPAWのセキュリティホールをパッチした
+- その他SPAWがらみの修正（まだまだ怪しいところはあるんですけど…）
+
+2004-2-23  1.5mh002
+- tc_navigation.php 内のTypoをFix (thx toshimitsu)
+- 検索とブロックで、関数を複製可能数だけ定義していた部分を、eval()を使うコードに変更した。(本当に素晴らしいです。minahitoさん、ありがとう!)
+
+2004-2-18  1.5mh001
+- 最初の版
+
+
+
+[/xlang:ja]
